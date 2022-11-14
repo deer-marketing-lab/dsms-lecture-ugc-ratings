@@ -1,5 +1,5 @@
 ---
-title: "MODULE NAME"
+title: "Social Media & User Generated Content"
 subtitle: "Digital and Social Media Strategies"
 author: "Lachlan Deer"
 institute: "Tilburg University"
@@ -20,14 +20,315 @@ class: font200
 TBD
 
 ---
+# Social Media Matters!
+
+> .font140[**Massive growth in social media use over the last two decades**]
+* 2005: 9% of Internet users aged 18-29 used social media (Aral, 2020)
+
+* 2021: 53.6 % of the *world's population* uses social media (Hootsuite, 2021)
+    * That's 4.2 billion people! 
+    * Average daily usage is approx. 2 and a half hours 
+
+
+---
+# Social Network Popularity Over Time
+
+```{r, echo = FALSE, fig.align = "center"}
+knitr::include_graphics("https://www.smartinsights.com/wp-content/uploads/2020/04/Growth-of-social-networks.png")
+```
+
+Image Source: Our World in Data, 2021 "[The rise of social media](https://ourworldindata.org/rise-of-social-media)" 
+
+---
+# Social Media Informs Purchasing
+
+```{r, echo = FALSE, fig.align = "center", out.width="75%"}
+knitr::include_graphics("https://www.smartinsights.com/wp-content/uploads/2020/04/How-social-media-informs-purchase-decisions.png")
+```
+
+Image Source: Global Web Index, 2021 "[Social media marketing trends in 2021](https://www.globalwebindex.com/reports/social)" 
+
+---
+class: .font160
+# Some Useful Definitions
+
+.font140[
+**User Generated Content**: Content that is generated or created by an internet user who is a consumer of this information or content
+]
+
+.font140[
+**Social Media**: The online platforms that host this content
+]
+
+* Think of these as the working definitions for our course
+
+* People have a tendency to be use these terms relatively interchangeably 
+  * (include me as one of the "people")
+
+---
+# Why Did Social Media Take off?
+
+Three factors:
+
+* **Digital Social Networks**
+  * Structured information flow
+
+* **Machine Intelligence**
+  * Recommendations of friends and content over the network
+
+* **Smartphones**
+  * "Always on"
+  * Feeds our social brain
+
+---
+class: font160
+# Today's Topic Coverage
+
+
+Reviews, Reputation and Revenue: The Case of Yelp.com
+
+* [Luca (2016)](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=1928601)
+
+Online Reputation Management: Estimating the Impact of Management Responses on Consumer Reviews
+
+* [Propserio & Zervas](https://doi.org/10.1287/mksc.2017.1043)
+
+The Market for Fake Reviews
+
+* [He, Hollenbeck & Prosperio (2022)](https://doi.org/10.1287/mksc.2022.1353)
+
+Real-Time Brand Reputation Tracking Using Social Media 
+
+* [Rust, Rand, Huang, Stephan, Brooks & Chabuk (2021)](https://doi.org/10.1177/0022242921995173) 
+* (Recommended -- we won't cover this in class)
+
+---
+# Focus on the Authors 
+
+.pull-left[
+
+```{r, echo = FALSE, fig.align = "center", out.width="80%"}
+url <- "https://www.hbs.edu/Style%20Library/api/headshot.aspx?id=602417"
+knitr::include_graphics(url)
+```
+]
+
+.pull-right[
+**Michael Luca**
+
+* Associate Prof at Harvard
+* Research in Online Platforms and Reviews
+* Value of Experiments:
+
+```{r, echo = FALSE, fig.align = "center", out.width="50%"}
+url <- "https://mit-press-us.imgix.net/covers/9780262542272.jpg?auto=format&w=298&dpr=1&q=20"
+knitr::include_graphics(url)
+```
+]
+
+---
+# Focus on the Authors 
+
+.pull-left[
+
+```{r, echo = FALSE, fig.align = "center", out.width="70%"}
+url <- "https://s.yimg.com/ge/labs/v1/uploads/Davide-Proserpio.jpeg"
+knitr::include_graphics(url)
+```
+]
+
+.pull-right[
+**Davide Proserpio**
+
+* Assistant Prof at U South California
+* Sharing Economy (eg. Airbnb) 
+* Online Trust and Reputation
+]
+
+
+---
 class: inverse, center, middle
 
-# Section XX
+# Reviews, Reputation and Revenue: The Case of Yelp.com
+
+---
+# Yelp Impacts Revenue? 
+
+```{r, echo = FALSE, fig.align = "center", out.width="60%"}
+url <- "figs/luca_yelp_revenue.png"
+knitr::include_graphics(url)
+```
+
+
+---
+# How Yelp Displays Ratings 
+
+```{r, echo = FALSE, fig.align = "center", out.width="80%"}
+url <- "figs/luca_yelp_halfpoints.png"
+knitr::include_graphics(url)
+```
+
+
+---
+# Rounding Ratings to Stars 
+
+```{r, echo = FALSE, fig.align = "center", out.width="80%"}
+url <- "figs/luca_rdd_rounding.png"
+knitr::include_graphics(url)
+```
+
+
+---
+# Main Results
+
+```{r, echo = FALSE, fig.align = "center", out.width="80%"}
+url <- "figs/luca_rdd_main.png"
+knitr::include_graphics(url)
+```
+
+
+---
+# Chain vs Independents 
+
+```{r, echo = FALSE, fig.align = "center", out.width="80%"}
+url <- "figs/luca_rdd_chains.png"
+knitr::include_graphics(url)
+```
+
+
+---
+# Crowding Out of Chains?
+
+```{r, echo = FALSE, fig.align = "center", out.width="80%"}
+url <- "figs/luca_rdd_crowd_out.png"
+knitr::include_graphics(url)
+```
+
+
+---
+# Takeaways
+
+---
+class: inverse, center, middle
+
+# Management Responses to Online Reviews
+
+---
+# Slide Title
+
+---
+# Slide Title 
+
+
+```{r, echo = FALSE, fig.align = "center", out.width="80%"}
+url <- "figs/pv_ashenfelterdip.png"
+knitr::include_graphics(url)
+```
+
+
+---
+# Slide Title 
+
+```{r, echo = FALSE, fig.align = "center", out.width="80%"}
+url <- "figs/pv_xplatform_main.png"
+knitr::include_graphics(url)
+```
+
+
+---
+# Slide Title 
+
+```{r, echo = FALSE, fig.align = "center", out.width="80%"}
+url <- "figs/pv_xplatform_page_intuition.png"
+knitr::include_graphics(url)
+```
+
+
+---
+# Slide Title 
+
+```{r, echo = FALSE, fig.align = "center", out.width="80%"}
+url <- "figs/pv_xplatform_page.png"
+knitr::include_graphics(url)
+```
+
+
+
+---
+# Slide Title 
+
+```{r, echo = FALSE, fig.align = "center", out.width="80%"}
+url <- "figs/pv_response_length.png"
+knitr::include_graphics(url)
+```
+
+
+---
+class: inverse, center, middle
+
+# The Market for Fake Reviews
 
 ---
 # Slide Title 
 
 course content here
+
+---
+# Slide Title 
+
+```{r, echo = FALSE, fig.align = "center", out.width="80%"}
+url <- "figs/hpp_recruiting.png"
+knitr::include_graphics(url)
+```
+
+
+---
+# Slide Title 
+
+```{r, echo = FALSE, fig.align = "center", out.width="80%"}
+url <- "figs/hpp_trends.png"
+knitr::include_graphics(url)
+```
+
+
+```{r, echo = FALSE, fig.align = "center", out.width="80%"}
+url <- "figs/hpp_trends_2.png"
+knitr::include_graphics(url)
+```
+
+
+
+
+---
+# Slide Title 
+
+---
+# Slide Title 
+
+```{r, echo = FALSE, fig.align = "center", out.width="80%"}
+url <- "figs/hpp_did_main.png"
+knitr::include_graphics(url)
+```
+
+
+---
+# Slide Title 
+
+```{r, echo = FALSE, fig.align = "center", out.width="80%"}
+url <- "figs/hpp_did_onestar.png"
+knitr::include_graphics(url)
+```
+
+---
+class: inverse, center, middle
+
+# Recap
+
+---
+# Summary
+
+course content here
+
 
 ---
 # License & Citation
@@ -36,10 +337,10 @@ Suggested Citation:
 
 ```{r, engine='out', eval = FALSE}
 @misc{deerdsms2022,
-      title={"Digital and Social Media Strategies: Lecture Slide Template"},
+      title={"Digital and Social Media Strategies: Social Media and User Generated Content"},
       author={Lachlan Deer},
       year={2022},
-      url = "https://github.com/tisem-digital-marketing/dsms-lecture-template"
+      url = "https://github.com/tisem-digital-marketing/dsms-lecture-11-ugc"
 }
 ```
 
