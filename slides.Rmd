@@ -13,11 +13,16 @@ output:
       highlightLines: true
       countIncrementalSlides: false
 ---
-class: font200
+class: font150
 
 # Learning Goals for this Week
 
-TBD
+* Define User Generated Content and Social Media 
+* Identify reasons for the growth of social media 
+* Explain the causal link between UGC and demand 
+* Describe how online reputation management by firms impacts their subsequent reputation 
+* Identify the effect of fake reviews on product sales and consumer welfare 
+* Describe how Regression Discontinuity Design facilitates estimating causal effects
 
 ---
 # Social Media Matters!
@@ -91,11 +96,11 @@ Reviews, Reputation and Revenue: The Case of Yelp.com
 
 Online Reputation Management: Estimating the Impact of Management Responses on Consumer Reviews
 
-* [Propserio & Zervas](https://doi.org/10.1287/mksc.2017.1043)
+* [Proserpio & Zervas](https://doi.org/10.1287/mksc.2017.1043)
 
 The Market for Fake Reviews
 
-* [He, Hollenbeck & Prosperio (2022)](https://doi.org/10.1287/mksc.2022.1353)
+* [He, Hollenbeck & Proserpio (2022)](https://doi.org/10.1287/mksc.2022.1353)
 
 Real-Time Brand Reputation Tracking Using Social Media 
 
@@ -152,13 +157,40 @@ class: inverse, center, middle
 # Reviews, Reputation and Revenue: The Case of Yelp.com
 
 ---
-# Yelp Impacts Revenue? 
+class: font160
+# Motivation 
 
-```{r, echo = FALSE, fig.align = "center", out.width="60%"}
-url <- "figs/luca_yelp_revenue.png"
-knitr::include_graphics(url)
-```
+**Strategic Question**: Do consumer reviews have causal impact on demand for experience goods
 
+* **Experience goods**: some attribute (eg. quality) remains unknown until purchase 
+
+Why relevant? 
+
+* Review platforms prevalent, heavily used 
+* But reviews noisy, difficult to interpret 
+* And other mechanisms exist for solving info asymmetry 
+  * Chain affiliation, Advertising, Expert reviews
+
+---
+class: font160
+# How to do this? 
+
+Running an experiment difficult / impossible 
+
+* Recurring issue in UGC markets 
+
+**Solution**: Exploit "jumps" in ratings due to Yelp's page design 
+
+* Average Review Score for a restaurant is continuous [0 - 5] ... 
+* But displayed as rounded to the nearest half star 
+* "Similar" restaurants will be displayed with different star ratings
+* We'll delve deeper soon ...
+
+**Data**
+
+* Yelp star rating and average star ratings over time 
+* Restaurant revenue 
+* Seattle, 2003 through 2009
 
 ---
 # How Yelp Displays Ratings 
@@ -168,6 +200,32 @@ url <- "figs/luca_yelp_halfpoints.png"
 knitr::include_graphics(url)
 ```
 
+---
+class: font160
+# Yelp Reviews & Revenue? 
+
+.pull-left[ 
+
+```{r, echo = FALSE, fig.align = "center", out.width="80%"}
+url <- "figs/luca_yelp_revenue.png"
+knitr::include_graphics(url)
+```
+
+]
+.pull-right[
+
+First Step: **Correlation between Yelp Ratings and Revenue?**
+
+* One star increase associated with 5.4% increase in revenue 
+
+Why can't we stop here? 
+
+* Yelp rating may be correlated with other unobservable factors 
+* That are correlated with revenue 
+
+$\implies$ **Omitted Variable Bias**
+
+]
 
 ---
 # Rounding Ratings to Stars 
@@ -177,26 +235,72 @@ url <- "figs/luca_rdd_rounding.png"
 knitr::include_graphics(url)
 ```
 
+---
+class: font160
+# Regression Discontinuity Design
+
+Core Idea: **Natural Experiment** where **Treatment allocated based on a cutoff score**
+
+In this case: 
+
+* Restaurant A: Avg Score 4.24 $\rightarrow$ 4 star 
+* Restaurant B: Avg Score 4.25 $\rightarrow$ 4.5 star 
+* Treatment is the extra half star
+
+But wait! 
+
+* Aren't restaurants with a higher Avg Rating simply "better" ...
+* ... And won't that be what we're estimating? 
+* (And isn't that the problem with the simple regression!?)
 
 ---
+class: font160
+# Regression Discontinuity Design
+
+**RDD focusses on the area right around the cutoff**
+
+* So comparing restaurants with **very similar average scores** 
+
+**Main Idea**: Within this group, it's **essentially random** whether you are **assigned 4 or 4.5 stars** 
+
+* Think of this as "barely in" vs "barely out"
+* These **restaurants should be almost identical** except one's star rating got rounded up
+* Seems like a good control group!
+* Remark: **Essentially random is an assumption**!
+  * Good, very recent papers will show you that around the cutoff, observable characteristics of treatment and control units are not jumping around
+  * And that there is no manipulation 
+
+
+---
+class: font160
 # Main Results
 
-```{r, echo = FALSE, fig.align = "center", out.width="80%"}
+```{r, echo = FALSE, fig.align = "center", out.width="60%"}
 url <- "figs/luca_rdd_main.png"
 knitr::include_graphics(url)
 ```
 
+Estimates for half star ratings jump, normalized to one star changes 
+
+$\implies$ **One star improvement leads to an approx 9% increase in revenue** 
+
 
 ---
+class: font160
 # Chain vs Independents 
 
-```{r, echo = FALSE, fig.align = "center", out.width="80%"}
+```{r, echo = FALSE, fig.align = "center", out.width="60%"}
 url <- "figs/luca_rdd_chains.png"
 knitr::include_graphics(url)
 ```
 
+**Yelp increases consumer's value of going to an independent restaurant** 
+
+* Which translates into higher revenue 
+* Luca points to this being due to consumers learning about quality
 
 ---
+class: font160
 # Crowding Out of Chains?
 
 ```{r, echo = FALSE, fig.align = "center", out.width="80%"}
@@ -204,9 +308,22 @@ url <- "figs/luca_rdd_crowd_out.png"
 knitr::include_graphics(url)
 ```
 
+**Chains experience decline in revenue relative to independent restaurants post-Yelp**
 
 ---
+class: font160
 # Takeaways
+
+* Reviews have a positive, causal impact on demand 
+  * As measured via a Regression Discontinuity Design  
+
+* One star improvement leads to an approx 9% increase in revenue
+
+* Effect holds for independent restaurants rather than chains 
+
+* Chain restaurants decline in revenue after Yelp introduced 
+
+$\implies$ Review websites alleviate information uncertainties about products & consumers respond to ratings
 
 ---
 class: inverse, center, middle
@@ -214,54 +331,150 @@ class: inverse, center, middle
 # Management Responses to Online Reviews
 
 ---
-# Slide Title
+class: font160
+# Motivation 
+
+**Strategic Question**: Do management responses to online reviews impact future ratings?
+
+Why relevant? 
+
+* Ratings matter for demand 
+* Legal, endorsed by platforms (as opposed to review fraud)
+* Widely adopted by managers 
+
+Setting: 
+
+* Hotel Industry (Trip Advisor and Expedia)
+* Natural Experiment / Diff in Diff
+  * The details to come...
 
 ---
-# Slide Title 
+class: font140
+# The Natural Experiment
 
+* **Treatment**: Managers respond to reviews on Trip Advisor
+  * They can't on Expedia 
+  * Treating management decision as a "suprise" (i.e. random shock) to future reviewers
 
-```{r, echo = FALSE, fig.align = "center", out.width="80%"}
+* **Treatment Group:** Reviews of a Hotel on Trip Advisor
+
+* **Control Group:**  Reviews of a Hotel on Expedia
+
+* **Outcome Variable**: Star rating of reviews
+
+* "Cross-platform": relative changed in star ratings between platforms after a reponse is written on Trip Advisor
+  * Differences in level of ratings for same hotel on different sites not an issue ...
+  * "Differenced out" in the Diff in Diff regression
+
+---
+class: font140
+# Graphical Evidence
+
+.pull-left[
+```{r, echo = FALSE, fig.align = "center", out.width="90%"}
 url <- "figs/pv_ashenfelterdip.png"
 knitr::include_graphics(url)
 ```
+]
 
+.pull-right[
+
+1. **Dip in relative ratings in the month before managers begin adopting responses** 
+  * akin to an "[Ashenfelter Dip](https://www.google.com/search?q=ashenfelter+dip)"
+  * Drop reviews left up to 30 days before 
+
+2. **Relative increase in star ratings after responses begin** 
+  * That appears permanent
+]
 
 ---
-# Slide Title 
+class: font140
+# Main Results 
 
-```{r, echo = FALSE, fig.align = "center", out.width="80%"}
+.pull-left[
+```{r, echo = FALSE, fig.align = "center", out.width="100%"}
 url <- "figs/pv_xplatform_main.png"
 knitr::include_graphics(url)
 ```
+]
+.pull-right[
+Management Responses lead to an increase in star rating of 0.097 stars 
 
+Is this a **big** effect?
+
+* approx 3 percent increase on average Trip Advisor Rating
+  * Hard to interpret ... 
+* Translates to about 7.5% of the standard deviation in ratings 
+  * Still hard to interpret ... 
+  * But similar in magnitude to effect of good job training programs on wages 
+
+
+
+]
+
+.font70[**Never put t-statistics in parentheses on a regression table!**]
 
 ---
-# Slide Title 
+class: font150
+# Visibility of Management Responses
 
-```{r, echo = FALSE, fig.align = "center", out.width="80%"}
+.pull-left[
+```{r, echo = FALSE, fig.align = "center", out.width="100%"}
 url <- "figs/pv_xplatform_page_intuition.png"
 knitr::include_graphics(url)
 ```
+]
+.pull-right[
+**Do the responses need to be visible?**
+
+Idea (intuitively):
+
+* Reviewer 10 sees response on first page of TA 
+* Reviewer 11 sees response on second page of TA 
+
+Response more effective on Reviewer 10 than Reviewer 11
+]
 
 
 ---
-# Slide Title 
+class: font150
+# Visibility of Management Responses
 
-```{r, echo = FALSE, fig.align = "center", out.width="80%"}
+.pull-left[
+```{r, echo = FALSE, fig.align = "center", out.width="100%"}
 url <- "figs/pv_xplatform_page.png"
 knitr::include_graphics(url)
 ```
-
+]
+.pull-right[
+**Effect is larger when responses are visible to the review writer**
+]
 
 
 ---
-# Slide Title 
+class: font140
+# Review Length Effects
 
 ```{r, echo = FALSE, fig.align = "center", out.width="80%"}
 url <- "figs/pv_response_length.png"
 knitr::include_graphics(url)
 ```
 
+* More reviews after start responding
+* Effect is larger when responses are visible to the review writer
+
+--
+# Takeaways 
+
+* Responding to reviews increases future ratings 
+
+* After adopting responses, ratings increase by approx 0.1 stars (out of 5)
+  * About 7.5 percent of a standard deviation
+
+* Effect larger when responses are likely visible to reviewer 
+  * i.e. on first page  
+
+* Also see more reviews, longer negative reviews 
 
 ---
 class: inverse, center, middle
@@ -269,21 +482,32 @@ class: inverse, center, middle
 # The Market for Fake Reviews
 
 ---
-# Slide Title 
+class: font160
+# Motivation 
 
-course content here
+**Strategic Question**: Do fake reviews have a causal effect on sales?
+
+Why relevant? 
+
+* Prevalent practice
+* Matters for platforms and sellers 
+
+Setting: 
+
+* Products on Amazon, Fake Review Facebook Groups
+* Natural Experiment / Diff in Diff
+  * Details to come ...
 
 ---
-# Slide Title 
+# Fake Review Recruiting
 
-```{r, echo = FALSE, fig.align = "center", out.width="80%"}
+```{r, echo = FALSE, fig.align = "center", out.width="100%"}
 url <- "figs/hpp_recruiting.png"
 knitr::include_graphics(url)
 ```
 
-
 ---
-# Slide Title 
+# Fake Reviews Influence Business Metrics
 
 ```{r, echo = FALSE, fig.align = "center", out.width="80%"}
 url <- "figs/hpp_trends.png"
@@ -296,13 +520,24 @@ url <- "figs/hpp_trends_2.png"
 knitr::include_graphics(url)
 ```
 
+---
+class: font160
+# The Experiment 
 
+Setting: Amazon undertakes large scale purge of (fake) reviews
 
+**Treatment**: Recruiting fake reviews starts 
+
+**Treatment Group**: Products on Amazon that did recruit fake reviews on Facebook
+
+**Control Group**: Products on Amazon that did **not** recruit fake reviews on Facebook
+
+**When?**Before** March 15 2020, focus on three weeks around that date
+
+**Idea**: Purge of reviews impacts products who recruit fake reviews but not those that don't
 
 ---
-# Slide Title 
-
----
+class: font150
 # Slide Title 
 
 ```{r, echo = FALSE, fig.align = "center", out.width="80%"}
@@ -310,14 +545,29 @@ url <- "figs/hpp_did_main.png"
 knitr::include_graphics(url)
 ```
 
+* Approx 10 percent increase in reviews after recruiting starts
+* 31 % improvement in sales rank
 
 ---
+class: font160
 # Slide Title 
 
-```{r, echo = FALSE, fig.align = "center", out.width="80%"}
+```{r, echo = FALSE, fig.align = "center", out.width="60%"}
 url <- "figs/hpp_did_onestar.png"
 knitr::include_graphics(url)
 ```
+
+Share of one-star reviews increases after recruiting fake reviews stops
+
+$\implies$ harmful to consumers
+
+---
+class: font160
+# Takeaways
+
+* Fake reviews increase number of reviews and sales rank 
+
+* Harmful to consumers 
 
 ---
 class: inverse, center, middle
@@ -325,10 +575,16 @@ class: inverse, center, middle
 # Recap
 
 ---
+class: font160
 # Summary
 
-course content here
+User Generated Content matters to consumers 
 
+* User generated star ratings increase demand for products where quality is uncertain and erodes value of chains 
+
+* When firms respond to reviews, leads to improved reputation  
+
+* Fake reviews are prevalent, impact sales and decrease consumer welfare
 
 ---
 # License & Citation
