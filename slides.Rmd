@@ -463,7 +463,7 @@ knitr::include_graphics(url)
 * More reviews after start responding
 * Effect is larger when responses are visible to the review writer
 
---
+---
 # Takeaways 
 
 * Responding to reviews increases future ratings 
