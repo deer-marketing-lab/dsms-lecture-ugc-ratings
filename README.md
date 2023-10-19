@@ -1,20 +1,19 @@
-# Digital and Social Media Strategies: LECTURE NAME
+# Digital and Social Media Strategies: User Generated Content
 
 [![lifecycle](https://img.shields.io/badge/lifecycle-stable-green.svg)](https://www.tidyverse.org/lifecycle/#maturing)
-[![lifecycle](https://img.shields.io/badge/version-2022-red.svg)]()
+[![lifecycle](https://img.shields.io/badge/version-2023-red.svg)]()
 
-**Things with `XXX` need updating**
 
 ## Meta-Information
 
 * Module Maintainer: Lachlan Deer (`@lachlandeer`)
 * Course: [Digital and Social Media Strategies](https://tisem-digital-marketing.github.io/XXX-dsms)
 * Institute: Dept of Marketing, Tilburg University
-* Current Version: [XXX edition](https://tisem-digital-marketing.github.io/XXXX-dsms)
+* Current Version: [2023 edition](https://tisem-digital-marketing.github.io/XXXX-dsms)
 
 ## Introduction
 
-Slides for the XXX of Digital and Social Media Strategies
+Slides for the User Generated Content Lecture of Digital and Social Media Strategies
 
 Slides are a xaringan presentation and are built to html and pdf using the Snakemake workflow management system.
 I also manage R's package dependencies with `renv`.
@@ -94,17 +93,17 @@ This will install all the packages we need. It may take a while.
 
 ## Suggested Citation (for the Module)
 
-Deer, Lachlan. 2022. Digital and Social Media Strategies: XXX.
+Deer, Lachlan. 2023. Digital and Social Media Strategies: User Generated Content.
 Tilburg University.
-url = "https://github.com/tisem-digital-marketing/dsms-lecture-XXX"
+url = "https://github.com/deer-marketing-lab/dsms-lecture-ugc-ratings"
 
 ## Suggested Citation (Template)
 
 ```{r, engine='out', eval = FALSE}
-@misc{deerdsms2022,
-      title={"Digital and Social Media Strategies: Lecture Slide Template"},
+@misc{deerdsms2023,
+      title={"Digital and Social Media Strategies: User Generated Content"},
       author={Lachlan Deer},
-      year={2022},
-      url = "https://github.com/tisem-digital-marketing/dsms-lecture-template"
+      year={2023},
+      url = "https://github.com/deer-marketing-lab/dsms-lecture-ugc-ratings"
 }
 ```
