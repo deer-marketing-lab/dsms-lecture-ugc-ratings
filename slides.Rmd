@@ -21,7 +21,7 @@ class: font160
 * Identify reasons for the growth of social media 
 * Explain the causal link between UGC and demand 
 * Describe how online reputation management by firms impacts their subsequent reputation 
-* Summarize how incentived reviews impact rating behaviour and consumer demand
+* Summarize how incentivized reviews impact rating behaviour and consumer demand
 * Identify the effect of fake reviews on product sales and consumer welfare 
 
 ---
@@ -201,7 +201,7 @@ class: font160
 
 <br>
 
-**Running a experimenter controlled study is impossible** 
+**Running an experimenter controlled study is impossible** 
 
 * Can't manipulate star ratings ethically 
 * How to display different ratings to people in the same city?
@@ -590,7 +590,7 @@ class: font150
 
 * **Control Group:**  Consumer didn't review for a week, standard email
 
-* Approx 325,000 listings im each of treatment and control groups
+* Approx 325,000 listings in each of treatment and control groups
 
 ---
 # Effect on Reviews
