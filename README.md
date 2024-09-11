@@ -1,7 +1,7 @@
-# Digital and Social Media Strategies: User Generated Content
+# Digital and Social Media Strategies: User Generated Content & Online Reviews
 
 [![lifecycle](https://img.shields.io/badge/lifecycle-stable-green.svg)](https://www.tidyverse.org/lifecycle/#maturing)
-[![lifecycle](https://img.shields.io/badge/version-2023-red.svg)]()
+[![lifecycle](https://img.shields.io/badge/version-2024-red.svg)]()
 
 
 ## Meta-Information
@@ -9,7 +9,7 @@
 * Module Maintainer: Lachlan Deer (`@lachlandeer`)
 * Course: [Digital and Social Media Strategies](https://tisem-digital-marketing.github.io/XXX-dsms)
 * Institute: Dept of Marketing, Tilburg University
-* Current Version: [2023 edition](https://tisem-digital-marketing.github.io/XXXX-dsms)
+* Current Version: [2024 edition](https://tisem-digital-marketing.github.io/XXXX-dsms)
 
 ## Introduction
 
@@ -93,17 +93,17 @@ This will install all the packages we need. It may take a while.
 
 ## Suggested Citation (for the Module)
 
-Deer, Lachlan. 2023. Digital and Social Media Strategies: User Generated Content.
+Deer, Lachlan. 2024. Digital and Social Media Strategies: User Generated Content & Online Reviews.
 Tilburg University.
-url = "https://github.com/deer-marketing-lab/dsms-lecture-ugc-ratings"
+url = "https://github.com/deer-marketing-lab/dsms-lecture-ugc"
 
 ## Suggested Citation (Template)
 
 ```{r, engine='out', eval = FALSE}
-@misc{deerdsms2023,
-      title={"Digital and Social Media Strategies: User Generated Content"},
+@misc{deerdsms2024,
+      title={"Digital and Social Media Strategies: User Generated Content & Online Reviews"},
       author={Lachlan Deer},
-      year={2023},
-      url = "https://github.com/deer-marketing-lab/dsms-lecture-ugc-ratings"
+      year={2024},
+      url = "https://github.com/deer-marketing-lab/dsms-lecture-ugc"
 }
 ```
