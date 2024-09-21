@@ -31,7 +31,7 @@ rule build_pdf:
         slides = "slides.html",
         runner = "run_decktape.R"
     output:
-        slides = "slides.pdf"
+        slides = "ugc_online_reviews_slides.pdf"
     log:
         "logs/decktape.Rout"
     shell:

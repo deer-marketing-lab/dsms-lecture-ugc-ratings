@@ -1,5 +1,5 @@
 ---
-title: "User Generated Content & Online Reviews"
+title: "User Generated Content & Online Reputation"
 subtitle: "Digital and Social Media Strategies"
 author: "Lachlan Deer"
 institute: "Tilburg University"
@@ -52,21 +52,41 @@ class: font160
 
 *Previously*: Measuring incremental (casual) effects of advertising
 
-* Heavy on field experiments
+* Best practice: Field experiments
 
 *The next three weeks:*
 
 * **Today**: **User Generated Content, Ratings and Reviews**
-* Next week: Influencers 
-* In two weeks: Word of Mouth and Viral Marketing
+* Next week: Influencers & Word of Mouth
+* In two weeks: Firm Actions on Social Media
 
-`r icons::fontawesome("rocket", style = "solid")` Challenge: Hard to run controlled field experiments on social media content
+`r icons::fontawesome("rocket", style = "solid")` Challenge: Hard to run *controlled* field experiments on social media content
 
 ---
 class: font160
-# Our learning journey... 
+# Today's Topic Coverage
 
-.center[.font120[How do Online Reviews Influence Consumer Behaviour]]
+Does Online Reputation Matter?
+
+* [Luca (2016)](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=1928601)
+
+Should Managers Respond to Reviews?
+
+* [Proserpio & Zervas (2017)](https://doi.org/10.1287/mksc.2017.1043)
+
+Should Managers Incentivize Reviews?
+
+* [Fradkin & Holtz (2023)](https://doi.org/10.1287/mksc.2023.1439)
+
+When does review manipulation (fake reviews) occur?
+
+* [Mayzlin, Dover and Chevalier (2014)][mayzlin]
+
+[mayzlin]: https://pubs.aeaweb.org/doi/pdfplus/10.1257/aer.104.8.2421
+
+*BONUS*: What are the (consumer) impacts of fake reviews?
+
+* [He, Hollenbeck & Proserpio (2022)](https://doi.org/10.1287/mksc.2022.1353)
 
 
 ---
@@ -141,29 +161,7 @@ Three factors:
   * "Always on"
   * Feeds our social brain
 
----
-class: font160
-# Today's Topic Coverage
 
-Does Online Reputation Matter?
-
-* [Luca (2016)](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=1928601)
-
-Should Managers Respond to Reviews?
-
-* [Proserpio & Zervas (2017)](https://doi.org/10.1287/mksc.2017.1043)
-
-Should Managers Incentivize Reviews?
-
-* [Fradkin & Holtz (2023)](https://doi.org/10.1287/mksc.2023.1439)
-
-Following discussion based on [Mayzlin, Dover and Chevalier, 2014][mayzlin]
-
-[mayzlin]: https://pubs.aeaweb.org/doi/pdfplus/10.1257/aer.104.8.2421
-
-*BONUS*: What are the (consumer) impacts of fake reviews?
-
-* [He, Hollenbeck & Proserpio (2022)](https://doi.org/10.1287/mksc.2022.1353)
 
 
 ---
@@ -943,7 +941,7 @@ class: font160
 
 * Incentivised reviews do not seem to inflate ratings, or increase demand 
 
-* Fake reviews are prevalent, impact sales and decrease consumer welfare
+* Fake reviews are prevalent, more concentrated in competitive markets, impact sales and decrease consumer welfare
 
 ---
 # License & Citation
@@ -952,7 +950,7 @@ Suggested Citation:
 
 ```{r, engine='out', eval = FALSE}
 @misc{deerdsms2024,
-      title={"Digital and Social Media Strategies: User Generated Content & Online Reviews"},
+      title={"Digital and Social Media Strategies: User Generated Content & Online Reputation"},
       author={Lachlan Deer},
       year={2024},
       url = "https://github.com/deer-marketing-lab/dsms-lecture-ugc"

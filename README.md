@@ -1,4 +1,4 @@
-# Digital and Social Media Strategies: User Generated Content & Online Reviews
+# Digital and Social Media Strategies: User Generated Content & Online Reputation
 
 [![lifecycle](https://img.shields.io/badge/lifecycle-stable-green.svg)](https://www.tidyverse.org/lifecycle/#maturing)
 [![lifecycle](https://img.shields.io/badge/version-2024-red.svg)]()
@@ -13,7 +13,7 @@
 
 ## Introduction
 
-Slides for the User Generated Content Lecture of Digital and Social Media Strategies
+Slides for the User Generated Content & Online Reputation Lecture of Digital and Social Media Strategies
 
 Slides are a xaringan presentation and are built to html and pdf using the Snakemake workflow management system.
 I also manage R's package dependencies with `renv`.
@@ -101,7 +101,7 @@ url = "https://github.com/deer-marketing-lab/dsms-lecture-ugc"
 
 ```{r, engine='out', eval = FALSE}
 @misc{deerdsms2024,
-      title={"Digital and Social Media Strategies: User Generated Content & Online Reviews"},
+      title={"Digital and Social Media Strategies: User Generated Content & Online Reputation"},
       author={Lachlan Deer},
       year={2024},
       url = "https://github.com/deer-marketing-lab/dsms-lecture-ugc"
