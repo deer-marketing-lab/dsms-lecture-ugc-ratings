@@ -80,9 +80,7 @@ Should Managers Incentivize Reviews?
 
 When does review manipulation (fake reviews) occur?
 
-* [Mayzlin, Dover and Chevalier (2014)][mayzlin]
-
-[mayzlin]: https://pubs.aeaweb.org/doi/pdfplus/10.1257/aer.104.8.2421
+* [Mayzlin, Dover and Chevalier (2014)][https://pubs.aeaweb.org/doi/pdfplus/10.1257/aer.104.8.2421]
 
 *BONUS*: What are the (consumer) impacts of fake reviews?
 
